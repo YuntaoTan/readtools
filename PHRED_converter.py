@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# developed by vitorpiro@gmail.com
+# vpiro.wordpress.com
 import sys, getopt
 from Bio import SeqIO
 
@@ -8,7 +10,6 @@ quali=''
 qualo=''
 
 def help(): return ("Usage: %s -i input -o output -q quality_output [33,64]" % sys.argv[0])
-
 try:
     myopts, args = getopt.getopt(sys.argv[1:],"i:o:q:")
     if len(myopts) == 0:
